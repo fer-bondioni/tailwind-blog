@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blog Landing Page</title>
+  </head>
+  <body class="font-body">
+    <div class="bg-white shadow-md sticky top-0 z-50">
+      <header class="container mx-auto max-w-6xl flex flex-wrap items-center p-6 justify-between">
+        <div class="text-sec flex items-center hover:text-pri cursor-pointer transition">
+          <svg class="fill-current h-8 w-8 mr-2" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+        </svg>
+
+          <span class="text-xli font-semibold font-title">TailwindNews</span>
+        </div>
+          <div class="md:hidden block">
+            <button id="menu-open" class="px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <button id="menu-close" class="hidden px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+          </div> 
+          <nav id="menu-items" class="hidden md:flex md:items-center font-title w-full md:w-auto">
+            <ul class="text-lg">
+             <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+                <a href="#" class="text-pri hover:text-sec transition">Home</a>
+            </li>
+             <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                <a href="#" class="text-pri hover:text-sec transition">About</a>
+            </li>
+             <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                <a href="#" class="text-pri hover:text-sec transition">Contact</a>
+            </li>
+             <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                <a href="#" class="text-pri hover:text-sec transition">Products & Shop</a>
+            </li>
+    
+            </ul>
+          </nav>
+      </header>
+    </div>
+    <div class="container mx-auto px-4 max-w-5xl">
+      
+      <!-- latest blog -->
+      <div class="text-center py-10 sm:py-14">
+        <h1 class="text-3xl md:text-5xl font-bold font-title text-sec">
+          Latest Blog <br />
+          <span class="text-pri">Posts</span>
+        </h1>
+        <p class="text-pri max-w-sm mx-auto py-6">
+          Welcome to our blog site. Get our latest news with just one search!
+        </p>
+        <input
+          type="search"
+          class="focus:outline-none focus:ring-1 ring-sec rounded-3xl shadow-inner bg-our-bg px-8 py-2"
+          placeholder="Search..."
+        />
+      </div>
+
+      <!-- Main section -->
+      <section class="main">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 sm:gap-y-12 lg:gap-y-16 gap-x-8 lg:gap-x-12">
+          <!-- first row -->
+          <div class="col-span-1 md:col-span-2 lg:col-span-3">
+            <a href="#" class="block overflow-hidden transition duration-500 hover:shadow-xl border border-gray-100 md:flex rounded-3xl">
+              <div class="md:w-1/2">
+                <img src="img/img1.jpg" alt="" srcset="" />
+              </div>
+              <div class="md:w-1/2 p-4 md:p-7">
+                <p
+                  class="text-xs rounded-md text-sec py-1 px-3 bg-our-bg inline"
+                >
+                  FEATURED
+                </p>
+                <h2 class="font-bold text-pri text-xl md:text-2xl font-title py-3 transition duration-200 hover:text-sec">
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">
+                  A brand style guide is also known as a brand guide or brand
+                  book. For many companies, the guide is essential to maintain
+                  their brand identity. For them, such a well-thought-of guide
+                  becomes their key document, which serves as a guide to create
+                  a variety of content for brand marketing.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    class="w-9 h-9 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-pri text-xs font-bold">John Doe</h6>
+                    <p class="text-xs text gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- second row -->
+
+          <div class="blog-card">
+            <a href="#" class="">
+              <img src="img/img2.jpg" alt="" srcset="" />
+              <div class="pb-6 px-4">
+                <h2 class="post-title">
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis unde ipsa placeat vitae amet doloremque explicabo,
+                  perferendis architecto inventore dolorum?
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    class="w-9 h-9 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-pri text-xs font-bold">John Doe</h6>
+                    <p class="text-xs text gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- second col in row -->
+          <div class="blog-card">
+            <a href="#" class="">
+              <img src="img/img2.jpg" alt="" srcset="" />
+              <div class="pb-6 px-4">
+                <h2 class="post-title">
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis unde ipsa placeat vitae amet doloremque explicabo,
+                  perferendis architecto inventore dolorum?
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    class="w-9 h-9 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-pri text-xs font-bold">John Doe</h6>
+                    <p class="text-xs text gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- third col in row -->
+          <div class="blog-card">
+            <a href="#" class="">
+              <img src="img/img2.jpg" alt="" srcset="" />
+              <div class="pb-6 px-4">
+                <h2 class="post-title">
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis unde ipsa placeat vitae amet doloremque explicabo,
+                  perferendis architecto inventore dolorum?
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    class="w-9 h-9 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-pri text-xs font-bold">John Doe</h6>
+                    <p class="text-xs text gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- third row -->
+          <div class="blog-card col-span-1 lg:col-span-2">
+            <a href="#">
+              <img src="img/img5.jpg" class="h-72 w-full" alt="" srcset="" />
+              <div class="pb-6 px-4">
+                <h2 class="post-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis unde ipsa placeat vitae amet doloremque explicabo,
+                  perferendis architecto inventore dolorum?
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    class="w-9 h-9 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-pri text-xs font-bold">John Doe</h6>
+                    <p class="text-xs text gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- second col second row -->
+          <div class="blog-card">
+            <a href="#">
+              <img src="img/img6.jpg" alt="" srcset="" />
+              <div class="pb-6 px-4">
+                <h2 class="post-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis unde ipsa placeat vitae amet doloremque explicabo,
+                  perferendis architecto inventore dolorum?
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="img/author1.jpg"
+                    class="w-9 h-9 rounded-full"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-pri text-xs font-bold">John Doe</h6>
+                    <p class="text-xs text gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- subscription -->
+      <section class="subscribe">
+        <div class="text-center py-12 sm:py-20 lg:py-32 mx-auto">
+          <h6 class="text-pri font-title font-bold text-3xl md:text-5xl">
+            Subscribe to Our <br />
+            <span class="text-sec">Blog</span>
+          </h6>
+          <p class="text-pri py-6 mx-auto max-w-sm">
+            Please subscribe to get regular updates and featured news through
+            your email!
+          </p>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="rounded-3xl shadow-inner focus:outline-none bg-our-bg px-8 py-2"
+            placeholder="Email Address"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="px-8 py-2 rounded-3xl hover:bg-blue-800 mt-4 sm:mt-0 sm:-ml-12 focus:outline-none focus:ring-1 bg-sec text-white"
+          />
+        </div>
+      </section>
+    </div>
+    <footer class="bg-pri">
+      <div class="text-center sm:flex mx-auto max-w-5xl font-bold font-extrabold justify-between font-title text-white px-8 py-8 tracking-wider">
+          <p>Tailwind CSS</p>
+          <p>All rights reserved @2022</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+
